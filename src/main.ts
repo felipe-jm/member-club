@@ -1,1 +1,5 @@
-import "./global.css";
+import "./styles/global.css";
+
+import "./styles/header.css";
+import "./styles/input.css";
+import "./styles/main.css";

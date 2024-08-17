@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  flex-direction: column;
+}
+
+header img {
+  width: 116px;
+  height: 56px;
+}
