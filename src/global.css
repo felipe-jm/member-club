@@ -1,0 +1,38 @@
+:root {
+  /* Color styles */
+  --pink: rgba(214, 88, 179, 1);
+  --green: rgba(69, 180, 66, 1);
+  --white: rgba(255, 255, 255, 1);
+  --gray-100: rgba(244, 241, 242, 1);
+  --gray-200: rgba(233, 231, 233, 1);
+  --gray-300: rgba(223, 220, 223, 1);
+  --gray-400: rgba(206, 202, 205, 1);
+  --gray-500: rgba(117, 108, 113, 1);
+  --gray-600: rgba(74, 68, 72, 1);
+  --gray-700: rgba(51, 43, 49, 1);
+
+  /* Text-size styles */
+  /* base size: heading---title--md (24px) */
+  --title--md: 1rem;
+  --title--sm: 0.75rem;
+  --subtitle--md: 0.58rem;
+  --subtitle--sm: 0.5rem;
+  --text--md: 0.67rem;
+  --text--sm: 0.58rem;
+  --text--xs: 0.5rem;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  font-family: Oxygen, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.4;
+  font-weight: var(--fw-regular);
+
+  color: var(--gray-500);
+  background-color: var(--gray-200);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
