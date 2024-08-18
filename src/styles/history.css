@@ -1,0 +1,67 @@
+.history {
+  grid-area: history;
+
+  padding: 1.75rem 1rem 1.5rem;
+}
+
+.history .history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.history .history-header h3 {
+  font: var(--subtitle--sm);
+  text-transform: uppercase;
+} 
+
+.history .history-header span {
+  font: var(--text--xs);
+} 
+
+.history .history-records {
+  margin-top: 1rem;
+}
+
+.history .history-record {
+  display: flex;
+  justify-content: space-between;
+}
+
+.history .history-records .history-record + .history-record {
+  margin-top: 0.75rem;
+}
+
+.history .history-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.history .history-date strong {
+  font: var(--subtitle--sm);
+}
+
+.history .history-date span {
+  font: var(--text--xs);
+}
+
+.history .history-record .history-check {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgb(70, 180, 66, 0.12);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.history .history-record .history-check .check {
+  color: var(--green);
+  font-size: 1.5rem;
+  line-height: 0;
+}

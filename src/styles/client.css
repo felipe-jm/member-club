@@ -1,0 +1,29 @@
+.client-info {
+  grid-area: client-info;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+
+.client-info img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 10px;
+}
+
+.client-info .name-date {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.client-info .name-date h3 {
+  font: var(--title--sm);
+}
+
+.client-info .name-date span {
+  font: var(--text--xs);
+}

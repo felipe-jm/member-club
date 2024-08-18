@@ -1,5 +1,28 @@
-main {
-  margin-top: 2rem;
+.grid-item {
+  background-color: var(--gray-100);
+  border-radius: 1rem; 
 
-  background-color: #f0f0f0;
+  border: 1px solid var(--gray-300);
+}
+
+.fidelity-card {
+  grid-area: fidelity-card;
+}
+
+.cuts-left {
+  grid-area: cuts-left;
+}
+
+main {
+  margin-top: 4rem;
+
+  display: grid;
+  grid-template-areas: 
+  "client-info fidelity-card fidelity-card"
+  "history fidelity-card fidelity-card"
+  "history cuts-left cuts-left"
+  ;
+  gap: 1rem 1.5rem;
+
+  width: 57rem;
 }
