@@ -8,10 +8,19 @@
   padding: 1rem;
 }
 
-.client-info img {
-  height: 3.5rem;
-  width: 3.5rem;
+.avatar-wrapper {
+  display: inline-block;
+  padding: 2px;
   border-radius: 10px;
+  background-image: var(--gradient-base); 
+}
+
+.avatar-wrapper img {
+  display: block;
+  width: 3.5rem; 
+  height: 3.5rem;
+  border-radius: 10px;
+  border: 2px solid white; 
 }
 
 .client-info .name-date {

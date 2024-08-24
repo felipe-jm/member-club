@@ -28,7 +28,13 @@
       </header>
 
       <form class="input-container">
-        <input type="text" placeholder="ID do cartão" required />
+        <input
+          id="clientId"
+          name="clientId"
+          type="text"
+          placeholder="ID do cartão"
+          required
+        />
         <button type="submit">
           <i class="ph ph-arrow-elbow-down-left"></i>
         </button>
@@ -36,22 +42,26 @@
 
       <main>
         <div class="grid-item client-info">
-          <div>
-            <img src="https://github.com/felipe-jm.png" alt="" />
+          <div class="avatar-wrapper">
+            <img
+              id="clientAvatar"
+              src="https://github.com/felipe-jm.png"
+              alt=""
+            />
           </div>
           <div class="name-date">
-            <h3>Felipe Jung</h3>
-            <span>Cliente desde 18/09/2024</span>
+            <h3 id="clientName"></h3>
+            <span id="clientSince"></span>
           </div>
         </div>
 
         <div class="grid-item history">
           <div class="history-header">
             <h3>Histórico</h3>
-            <span>7 cortes</span>
+            <span id="totalCuts"></span>
           </div>
-          <div class="history-records">
-            <div class="history-record">
+          <ul id="appointmentHistory" class="history-records">
+            <!-- <li class="history-record">
               <div class="history-date">
                 <strong>29/04/2024</strong>
                 <span>18:30</span>
@@ -59,28 +69,8 @@
               <div class="history-check">
                 <i class="check ph ph-seal-check"></i>
               </div>
-            </div>
-
-            <div class="history-record">
-              <div class="history-date">
-                <strong>29/04/2024</strong>
-                <span>18:30</span>
-              </div>
-              <div class="history-check">
-                <i class="check ph ph-seal-check"></i>
-              </div>
-            </div>
-
-            <div class="history-record">
-              <div class="history-date">
-                <strong>29/04/2024</strong>
-                <span>18:30</span>
-              </div>
-              <div class="history-check">
-                <i class="check ph ph-seal-check"></i>
-              </div>
-            </div>
-          </div>
+            </li> -->
+          </ul>
         </div>
 
         <div class="grid-item fidelity-card">
@@ -90,45 +80,38 @@
               <span>Ao fazer cortes de cabelo, o décimo sai de graça!</span>
             </div>
             <div class="fidelity-card-tag">
-              <span> ID: 123-123-123 </span>
+              <span id="clientIdTag"></span>
             </div>
           </div>
-          <div class="fidelity-card-cuts">
-            <div class="fidelity-card-cut">
+          <div id="fidelityCard" class="fidelity-card-cuts">
+            <!-- <div class="fidelity-card-cut">
               <img src="./src/assets/PinCheck.svg" alt="" />
             </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
-            <div class="fidelity-card-cut">
-              <img src="./src/assets/PinCheck.svg" alt="" />
-            </div>
+            <div class="fidelity-card-cut"></div>
+            <div class="fidelity-card-cut"></div>
+            <div class="fidelity-card-cut"></div>
+            <div class="fidelity-card-cut"></div>
+            <div class="fidelity-card-cut"></div>
+            <div class="fidelity-card-cut"></div>
             <div class="fidelity-card-cut"></div>
             <div class="fidelity-card-cut"></div>
             <div class="fidelity-card-cut">
               <i class="fidelity-card-gift ph ph-gift"></i>
-            </div>
+            </div> -->
           </div>
         </div>
 
         <div class="grid-item cuts-left">
           <div class="cuts-left-remaining">
-            <span><strong>3</strong> cortes restantes</span>
+            <span><strong id="cutsRemaining"></strong> cortes restantes</span>
             <div class="cuts-left-progress-bar-wrapper">
-              <div class="cuts-left-progress-bar"></div>
-              <div class="uts-left-progress-number">7 de 10</div>
+              <div class="cuts-left-progress-bar-container">
+                <div
+                  id="cutsLeftProgressBar"
+                  class="cuts-left-progress-bar"
+                ></div>
+              </div>
+              <div id="totalCutsOfTen" class="cuts-left-progress-number"></div>
             </div>
           </div>
           <div class="cuts-left-gift">

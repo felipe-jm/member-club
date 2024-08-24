@@ -24,13 +24,20 @@
   align-items: baseline;
 }
 
-.cuts-left .cuts-left-remaining .cuts-left-progress-bar-wrapper .cuts-left-progress-bar {
-  flex: 1;
-  height: 0.5rem;
-  background-image: var(--gradient-base);
+.cuts-left .cuts-left-remaining .cuts-left-progress-bar-container {
+  width: 100%;
+  background-color: var(--gray-300);
   border-radius: 9999px;
+  overflow: hidden;
   margin-top: 1rem;
   margin-right: 0.75rem;
+}
+
+.cuts-left .cuts-left-remaining .cuts-left-progress-bar-wrapper .cuts-left-progress-bar {
+  height: 0.5rem;
+  background-image: var(--gradient-base); 
+  border-radius: 9999px;
+  width: 0%;
 }
 
 .cuts-left .cuts-left-remaining .cuts-left-progress-bar-wrapper .cuts-left-progress-number {

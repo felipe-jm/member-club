@@ -1,3 +1,4 @@
+// CSS
 import "./styles/global.css";
 
 import "./styles/header.css";
@@ -8,3 +9,6 @@ import "./styles/fidelity-card.css";
 import "./styles/cuts-left.css";
 
 import "./styles/main.css";
+
+// JS
+import "./modules/form/submit";
