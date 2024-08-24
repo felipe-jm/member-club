@@ -61,6 +61,8 @@ export function renderClientData(clientData: Client) {
 
   totalCutsOfTen.textContent = `${haircutsRemaining}/${totalHaircuts}`;
 
+  fidelityCard.innerHTML = "";
+
   for (let i = 1; i <= clientData.loyaltyCard.totalCuts; i++) {
     const div = document.createElement("div");
     div.classList.add("fidelity-card-cut");
