@@ -120,4 +120,8 @@ export function renderClientData(clientData: Client) {
 
     appointmentHistory.appendChild(li);
   });
+
+  if (clientData.loyaltyCard.cutsRemaining === 0) {
+    alert("Parabéns! Seu próximo corte é gratuito!");
+  }
 }
